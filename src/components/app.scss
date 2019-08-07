@@ -1,9 +1,6 @@
 body {
 	background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
 	background-size: 300% 300%;
-	-webkit-animation: Background 25s ease infinite;
-	-moz-animation: Background 25s ease infinite;
-	animation: Background 25s ease infinite;
 }
 
 .full-screen {
@@ -13,7 +10,7 @@ body {
 	bottom: 0;
 	left: 0;
 	//you need to setup file-loader in webpack before you can use images
-	//background: url("../../asset/images/background.jpg");
+	background: url("../../asset/images/background.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -29,6 +26,14 @@ body {
 	-webkit-justify-content: center;
 	justify-content: center;
 	text-align: center;
+
+	.text-bg {
+		background: #864fe1;
+		height: 50%;
+		width: auto;
+		padding: 20px;
+		border-radius: 20px;
+	}
 }
 
 h1 {
@@ -71,41 +76,5 @@ h1 {
 		opacity: 1;
 		background-color: #fff;
 		color: grey;
-	}
-}
-
-@-webkit-keyframes Background {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@-moz-keyframes Background {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes Background {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
 	}
 }
